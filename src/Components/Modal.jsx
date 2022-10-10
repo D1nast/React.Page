@@ -11,8 +11,12 @@ const Modal = (props) => {
         <div className="modal-inner">
           <div className="modal-header"></div>
           <div className="modal-introduction">
-            <h2>Nice</h2>
-            <p>あ</p>
+            <h2>当サイトについて</h2>
+            <p>
+              本サイトはAWSを使用してデプロイしています。
+              <br />
+              言語はJavaScriptで、フレームワークのReactを用いています。
+            </p>
           </div>
           <div className="BtnWrap">
             <button className="modalCloseBtn" onClick={onClickCloseModal}>
