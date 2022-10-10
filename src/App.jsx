@@ -6,15 +6,14 @@ import Footerpart from "./Components/Footerpart.jsx";
 import Modal from "./Components/Modal.jsx";
 
 const App = () => {
-  const [displayModal, setDisplayModal] = useState(true);
-  console.log(displayModal);
+  const [displayModal,setDisplayModal]=useState(false);
   return (
     <>
       <Headpart />
-      <Mainpart/>
+      <Mainpart />
       <SecondMainpart />
       <Footerpart />
-      <Modal displayModal={displayModal} setDisplayModal={setDisplayModal} />
+      <Modal />
     </>
   );
 };
