@@ -3,8 +3,8 @@ import React from "react";
 const Footerpart = () => {
   return (
     <footer>
-      <div class="footer">
-        <ul class="menu">
+      <div className="footer">
+        <ul className="menu">
           <li>
             <a href="#">AAAAA</a>
           </li>
@@ -21,7 +21,7 @@ const Footerpart = () => {
             <a href="#">EEEEE</a>
           </li>
         </ul>
-        <p class="footerMessage">D1nast</p>
+        <p className="footerMessage">D1nast</p>
       </div>
     </footer>
   );

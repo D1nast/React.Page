@@ -3,7 +3,7 @@ body {
   padding: 0;
 }
 
-/*header*/
+/*Headerpart.jsx*/
 .header {
   position: fixed;
   top: 0;
@@ -32,12 +32,12 @@ body {
   color: inherit;
   text-decoration: none;
 }
-/*自己紹介*/
-main {
+/*Mainpart.jsx*/
+.main {
   width: 100%;
-  height: 50vh;
+  height: 70vh;
   background-color: #faf4f4;
-  padding-top: 60px;
+  padding-top: 100px;
 }
 .about {
   width: 500px;
@@ -46,9 +46,10 @@ main {
   margin: 25px auto;
   text-align: center;
   background-color: rgb(212, 248, 248);
+  padding-bottom: 25px;
 }
 
-/*学んだことリスト*/
+/*SecondMainpart.jsx*/
 .second-main {
   width: 100%;
   height: 90vh;
@@ -145,7 +146,7 @@ p {
 .footerMessage {
   padding-top: 10px;
 }
-/*モーダル*/
+/*Modal*/
 .modal {
   position: fixed;
   top: 0;
@@ -162,7 +163,7 @@ p {
   left: 0;
   width: 480px;
   padding-bottom: 60px;
-  margin: auto;
+  margin:30px auto;
   background-color: rgb(255, 255, 255);
   border-radius: 8px;
 }
@@ -174,15 +175,18 @@ p {
   border-radius: 8px 8px 0 0;
   background-image: url("https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/react/modal_bar.svg");
 }
-
+.modal-introduction {
+  text-align: center;
+}
 .modal-introduction p {
   color: #5876a3;
   width: 384px;
   line-height: 32px;
-  text-align: left;
   margin: 36px auto 40px;
 }
-
+.BtnWrap{
+  text-align: center;
+}
 .modalCloseBtn {
   font-size: 13px;
   color: #8491a5;
