@@ -1,7 +1,7 @@
 import React from "react";
 
-const Modal = () => {
-  
+const Modal = (props) => {
+  const { displayModal, setDisplayModal } = props;
   return (
     <div className="modal">
       <div className="modal-inner">
@@ -11,9 +11,7 @@ const Modal = () => {
           <p>あ</p>
         </div>
         <div className="BtnWrap">
-          <button className="modalCloseBtn">
-            とじる
-          </button>
+          <button className="modalCloseBtn">とじる</button>
         </div>
       </div>
     </div>
