@@ -10,7 +10,7 @@ const App = () => {
   return (
     <>
       <Headpart />
-      <Mainpart />
+      <Mainpart setDisplayModal={setDisplayModal} />
       <SecondMainpart />
       <Footerpart />
       <Modal displayModal={displayModal} setDisplayModal={setDisplayModal} />
