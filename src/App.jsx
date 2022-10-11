@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Headpart from "./Components/Headpart.jsx";
 import Mainpart from "./Components/Mainpart.jsx";
+import Profile from "./Components/Profile.jsx";
 import SecondMainpart from "./Components/SecondMainpart.jsx";
 import Footerpart from "./Components/Footerpart.jsx";
 import Modal from "./Components/Modal.jsx";
@@ -23,6 +24,7 @@ const App = () => {
     <>
       <Headpart />
       <Mainpart />
+      <Profile/>
       <SecondMainpart
         setDisplayModal={setDisplayModal}
         secondMainInstruction={secondMainInstruction}
