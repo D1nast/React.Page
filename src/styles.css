@@ -1,6 +1,8 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 /*Headerpart.jsx*/
@@ -9,7 +11,7 @@ body {
   top: 0;
   left: 0;
   height: 60px;
-  background: #00dafc;
+  background: #000;
   color: #fff;
   width: 100%;
   opacity: 0.8;
@@ -35,9 +37,11 @@ body {
 /*Mainpart.jsx*/
 .main {
   width: 100%;
-  height: 70vh;
+  height: 90vh;
   background-color: #faf4f4;
   padding-top: 100px;
+  background-image: url("./img/header.jpg");
+  background-size: cover;
 }
 .about {
   width: 500px;
@@ -53,7 +57,7 @@ body {
 .second-main {
   width: 100%;
   height: 90vh;
-  background-color: #e4edef;
+  background-color: #f4f4f4;
 }
 
 .secondMain-contents {
@@ -61,64 +65,60 @@ body {
 }
 .secondContents-flex {
   width: 30%;
-  height: 200px;
-  border: 1px solid red;
+  height: auto;
   margin: 50px 30px;
+  background-color: white;
+  box-shadow: 0 0 4px rgb(68 68 68 / 24%);
+  padding-bottom: 50px;
+  color: #444444;
 }
-.secondContents-flex h1,
-p {
+.secondContents-flex h1 {
   text-align: center;
   font-weight: normal;
   font-size: 18px;
+  color: #444444;
 }
-
+.secondContentsImage {
+  height: 250px;
+  width: 100%;
+  background-image: url("./img/header.jpg");
+  background-size: cover;
+}
+.secondContentsArticle p {
+  display: block;
+  font-size: 13px;
+  padding: 10px 30px;
+}
 /*ボタン*/
 .btn1 {
   display: flex;
   align-items: center;
+  padding-left: 10px;
   margin: 0 auto;
-  padding-left: 42px;
-  width: 150px;
-  color: #000;
-  font-size: 18px;
-  font-weight: 700;
-  border: 3px solid #a0c4d3;
-  border-radius: 10px;
-  background-color: #faf4f4;
+  width: 80px;
+  font-size: 12px;
+  box-shadow: 0 0 4px rgb(68 68 68 / 24%);
   cursor: pointer;
-}
-
-.btn1:after {
-  content: "";
-  width: 5px;
-  height: 5px;
-  border-top: 3px solid #2285b1;
-  border-right: 3px solid #2285b1;
-  transform: rotate(45deg);
+  background-color: white;
+  border: none;
 }
 
 .btn1:hover {
-  color: #333333;
   text-decoration: none;
   background-color: #a0c4d3;
-}
-
-.btn1:hover:after {
-  border-top: 3px solid #333333;
-  border-right: 3px solid #333333;
 }
 
 /*footer*/
 .footer {
   width: 100%;
   height: 65px;
-  color: #808080;
-  background: #e5e5e5;
+  color: #efefef;
+  background-color: #3d3d3d;
   padding: 15px 0;
 }
 .footer a {
-  color: #808080;
   text-decoration: none;
+  color: #efefef;
 }
 .footer a:hover {
   text-decoration: underline;
@@ -142,6 +142,7 @@ p {
 .footer .footerMessage {
   margin: 0;
   float: left;
+  color: #efefef;
 }
 .footerMessage {
   padding-top: 10px;
@@ -163,16 +164,15 @@ p {
   left: 0;
   width: 480px;
   padding-bottom: 60px;
-  margin:30px auto;
-  background-color: rgb(255, 255, 255);
-  border-radius: 8px;
+  margin: 30px auto;
+  box-shadow: 0 0 4px rgb(68 68 68 / 24%);
+  background-color: white;
 }
 
 .modal-header {
   height: 8px;
   width: 100%;
   margin-bottom: 60px;
-  border-radius: 8px 8px 0 0;
   background-image: url("https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/react/modal_bar.svg");
 }
 .modal-introduction {
@@ -184,7 +184,7 @@ p {
   line-height: 32px;
   margin: 36px auto 40px;
 }
-.BtnWrap{
+.BtnWrap {
   text-align: center;
 }
 .modalCloseBtn {

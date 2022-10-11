@@ -8,16 +8,16 @@ const Headpart = () => {
           <h1 className="logo">My One</h1>
           <ul className="nav">
             <li>
-              <a href="">Home</a>
+              <a href="">HOME</a>
             </li>
             <li>
               <a href="https://d1nast.github.io/JS.ToDoApp/">MyProjects</a>
             </li>
             <li>
-              <a href="">About Us</a>
+              <a href="">私について</a>
             </li>
             <li>
-              <a href="">Contact Us</a>
+              <a href="">お問い合わせ</a>
             </li>
           </ul>
         </div>
