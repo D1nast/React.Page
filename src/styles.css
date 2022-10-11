@@ -79,22 +79,17 @@ p {
 .btn1 {
   display: flex;
   align-items: center;
+  padding-left: 10px;
   margin: 0 auto;
   width: 80px;
-  font-size: 3px;
+  font-size: 12px;
   box-shadow: 0 0 4px rgb(68 68 68 / 24%);
   cursor: pointer;
   background-color: white;
-}
-
-.btn1:after {
-  content: "";
-  width: 5px;
-  height: 5px;
+  border: none;
 }
 
 .btn1:hover {
-  color: #333333;
   text-decoration: none;
   background-color: #a0c4d3;
 }
@@ -155,15 +150,14 @@ p {
   width: 480px;
   padding-bottom: 60px;
   margin: 30px auto;
-  background-color: rgb(255, 255, 255);
-  border-radius: 8px;
+  box-shadow: 0 0 4px rgb(68 68 68 / 24%);
+  background-color: white;
 }
 
 .modal-header {
   height: 8px;
   width: 100%;
   margin-bottom: 60px;
-  border-radius: 8px 8px 0 0;
   background-image: url("https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/react/modal_bar.svg");
 }
 .modal-introduction {

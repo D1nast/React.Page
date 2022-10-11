@@ -41,15 +41,15 @@ const SecondMainpart = (props) => {
         <div className="secondContents-flex">
           <h1>{secondMainInstruction[2]}</h1>
           <p>{secondMainExplain[2]}</p>
+          <button
+            className="btn1"
+            onClick={() => {
+              onClickOpenModal([2]);
+            }}
+          >
+            Read More
+          </button>
         </div>
-        <button
-          className="btn1"
-          onClick={() => {
-            onClickOpenModal([2]);
-          }}
-        >
-          Read More
-        </button>
       </div>
     </div>
   );
