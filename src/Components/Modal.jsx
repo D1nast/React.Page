@@ -1,7 +1,8 @@
 import React from "react";
 
 const Modal = (props) => {
-  const { displayModal, setDisplayModal } = props;
+  const { displayModal, setDisplayModal, modalInstruction, modalExplain } =
+    props;
   const onClickCloseModal = () => {
     setDisplayModal(false);
   };

@@ -7,13 +7,24 @@ import Modal from "./Components/Modal.jsx";
 
 const App = () => {
   const [displayModal, setDisplayModal] = useState(false);
+  const [modalInstruction, setModalInstruction] = useState("");
+  const [modalExplain, setModalExplain] = useState("");
   return (
     <>
       <Headpart />
-      <Mainpart setDisplayModal={setDisplayModal} />
-      <SecondMainpart />
+      <Mainpart />
+      <SecondMainpart
+        setDisplayModal={setDisplayModal}
+        setmodalInstruction={setModalInstruction}
+        setModalExplain={setModalExplain}
+      />
       <Footerpart />
-      <Modal displayModal={displayModal} setDisplayModal={setDisplayModal} />
+      <Modal
+        displayModal={displayModal}
+        setDisplayModal={setDisplayModal}
+        modalInstruction={modalInstruction}
+        modalExplain={modalExplain}
+      />
     </>
   );
 };
