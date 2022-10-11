@@ -64,9 +64,9 @@ body {
 .secondContents-flex {
   width: 30%;
   height: 200px;
-  border: 1px solid #000;
   margin: 50px 30px;
   background-color: white;
+  box-shadow: 0 0 4px rgb(68 68 68 / 24%);
 }
 .secondContents-flex h1,
 p {
