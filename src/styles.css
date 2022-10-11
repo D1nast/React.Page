@@ -80,35 +80,23 @@ p {
   display: flex;
   align-items: center;
   margin: 0 auto;
-  padding-left: 42px;
-  width: 150px;
-  color: #000;
-  font-size: 18px;
-  font-weight: 700;
-  border: 3px solid #a0c4d3;
-  border-radius: 10px;
-  background-color: #faf4f4;
+  width: 80px;
+  font-size: 3px;
+  box-shadow: 0 0 4px rgb(68 68 68 / 24%);
   cursor: pointer;
+  background-color: white;
 }
 
 .btn1:after {
   content: "";
   width: 5px;
   height: 5px;
-  border-top: 3px solid #2285b1;
-  border-right: 3px solid #2285b1;
-  transform: rotate(45deg);
 }
 
 .btn1:hover {
   color: #333333;
   text-decoration: none;
   background-color: #a0c4d3;
-}
-
-.btn1:hover:after {
-  border-top: 3px solid #333333;
-  border-right: 3px solid #333333;
 }
 
 /*footer*/

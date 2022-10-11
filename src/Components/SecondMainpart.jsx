@@ -12,54 +12,46 @@ const SecondMainpart = (props) => {
     setDisplayModal(true);
   };
   return (
-    <>
-      <div className="second-main">
-        <div className="secondMain-contents">
-          <div className="secondContents-flex">
-            <div className="secondContents-discription">
-              <h1>{secondMainInstruction[0]}</h1>
-              <p>{secondMainExplain[0]}</p>
-            </div>
-            <button
-              className="btn1"
-              onClick={() => {
-                onClickOpenModal([0]);
-              }}
-            >
-              詳しく
-            </button>
-          </div>
-          <div className="secondContents-flex">
-            <div className="secondContents-discription">
-              <h1>{secondMainInstruction[1]}</h1>
-              <p>{secondMainExplain[1]}</p>
-            </div>
-            <button
-              className="btn1"
-              onClick={() => {
-                onClickOpenModal([1]);
-              }}
-            >
-              詳しく
-            </button>
-          </div>
-          <div className="secondContents-flex">
-            <div className="secondContents-discription">
-              <h1>{secondMainInstruction[2]}</h1>
-              <p>{secondMainExplain[2]}</p>
-            </div>
-            <button
-              className="btn1"
-              onClick={() => {
-                onClickOpenModal([2]);
-              }}
-            >
-              詳しく
-            </button>
-          </div>
+    <div className="second-main">
+      <div className="secondMain-contents">
+        <div className="secondContents-flex">
+          <h1>{secondMainInstruction[0]}</h1>
+          <p>{secondMainExplain[0]}</p>
+          <button
+            className="btn1"
+            onClick={() => {
+              onClickOpenModal([0]);
+            }}
+          >
+            Read More
+          </button>
         </div>
+        <div className="secondContents-flex">
+          <h1>{secondMainInstruction[1]}</h1>
+          <p>{secondMainExplain[1]}</p>
+          <button
+            className="btn1"
+            onClick={() => {
+              onClickOpenModal([1]);
+            }}
+          >
+            Read More
+          </button>
+        </div>
+        <div className="secondContents-flex">
+          <h1>{secondMainInstruction[2]}</h1>
+          <p>{secondMainExplain[2]}</p>
+        </div>
+        <button
+          className="btn1"
+          onClick={() => {
+            onClickOpenModal([2]);
+          }}
+        >
+          Read More
+        </button>
       </div>
-    </>
+    </div>
   );
 };
 
