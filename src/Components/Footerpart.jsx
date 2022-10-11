@@ -6,10 +6,10 @@ const Footerpart = () => {
       <div className="footer">
         <ul className="menu">
           <li>
-            <a href="#">AAAAA</a>
+            <a href="https://github.com/D1nast">Github</a>
           </li>
           <li>
-            <a href="#">BBBBB</a>
+            <a href="#">Todoアプリ</a>
           </li>
           <li>
             <a href="#">CCCCC</a>

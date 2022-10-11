@@ -8,12 +8,12 @@ import Modal from "./Components/Modal.jsx";
 const App = () => {
   const [displayModal, setDisplayModal] = useState(false);
   const [secondMainInstruction] = useState([
-    "アウトプットについて",
+    "Codeのデプロイ",
     "趣味",
-    "普段の生活",
+    "私について",
   ]);
   const [secondMainExplain] = useState([
-    "Githubやherokuに公開しています",
+    "コードはGithubに、WebサイトについてはAWSを使用して公開しています",
     "スキーが趣味です",
     "金融機関に勤務している大阪人です",
   ]);
