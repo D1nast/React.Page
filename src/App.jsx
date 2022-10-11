@@ -7,13 +7,35 @@ import Modal from "./Components/Modal.jsx";
 
 const App = () => {
   const [displayModal, setDisplayModal] = useState(false);
+  const [secondMainInstruction] = useState([
+    "アウトプットについて",
+    "趣味",
+    "普段の生活",
+  ]);
+  const [secondMainExplain] = useState([
+    "Githubやherokuに公開しています",
+    "スキーが趣味です",
+    "金融機関に勤務している大阪人です",
+  ]);
+  const [modalInstruction, setmodalInstruction] = useState(["", "", ""]);
+  const [modalExplain] = useState(["", "", ""]);
   return (
     <>
       <Headpart />
-      <Mainpart setDisplayModal={setDisplayModal} />
-      <SecondMainpart />
+      <Mainpart />
+      <SecondMainpart
+        setDisplayModal={setDisplayModal}
+        secondMainInstruction={secondMainInstruction}
+        secondMainExplain={secondMainExplain}
+        setmodalInstruction={setmodalInstruction}
+      />
       <Footerpart />
-      <Modal displayModal={displayModal} setDisplayModal={setDisplayModal} />
+      <Modal
+        displayModal={displayModal}
+        setDisplayModal={setDisplayModal}
+        modalInstruction={modalInstruction}
+        modalExplain={modalExplain}
+      />
     </>
   );
 };

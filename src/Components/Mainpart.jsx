@@ -1,10 +1,6 @@
 import React from "react";
 
-const Mainpart = (props) => {
-  const { setDisplayModal } = props;
-  const onClickOpenModal = () => {
-    setDisplayModal(true);
-  };
+const Mainpart = () => {
   return (
     <>
       <div className="main">
@@ -18,9 +14,6 @@ const Mainpart = (props) => {
               <br />
               プログラミングの奥深さに苦戦していますがめげずに頑張中
             </p>
-            <button className="btn1" onClick={onClickOpenModal}>
-              詳しく
-            </button>
           </div>
         </div>
       </div>
