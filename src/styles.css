@@ -9,7 +9,7 @@ body {
   top: 0;
   left: 0;
   height: 60px;
-  background: #00dafc;
+  background: #000;
   color: #fff;
   width: 100%;
   opacity: 0.8;
@@ -35,9 +35,11 @@ body {
 /*Mainpart.jsx*/
 .main {
   width: 100%;
-  height: 70vh;
+  height: 90vh;
   background-color: #faf4f4;
   padding-top: 100px;
+  background-image: url("./header.jpg");
+  background-size: cover;
 }
 .about {
   width: 500px;
@@ -53,7 +55,7 @@ body {
 .second-main {
   width: 100%;
   height: 90vh;
-  background-color: #e4edef;
+  background-color: #f4f4f4;
 }
 
 .secondMain-contents {
@@ -62,8 +64,9 @@ body {
 .secondContents-flex {
   width: 30%;
   height: 200px;
-  border: 1px solid red;
+  border: 1px solid #000;
   margin: 50px 30px;
+  background-color: white;
 }
 .secondContents-flex h1,
 p {
@@ -113,7 +116,7 @@ p {
   width: 100%;
   height: 65px;
   color: #808080;
-  background: #e5e5e5;
+  background-color: #3d3d3d;
   padding: 15px 0;
 }
 .footer a {
@@ -163,7 +166,7 @@ p {
   left: 0;
   width: 480px;
   padding-bottom: 60px;
-  margin:30px auto;
+  margin: 30px auto;
   background-color: rgb(255, 255, 255);
   border-radius: 8px;
 }
@@ -184,7 +187,7 @@ p {
   line-height: 32px;
   margin: 36px auto 40px;
 }
-.BtnWrap{
+.BtnWrap {
   text-align: center;
 }
 .modalCloseBtn {
